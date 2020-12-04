@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/*
+   Final Project Website
+   
+   Chicago's Attractions & Virtual Tours   
+   @author Sobeira Saldivar
+   Date:   11/15/2020   
+   
+   Filename: ss_designs.css
+
+   Layout and Design style used by all screen sizes for
+   the Chicago's Attractions & Virtual Tours website
+
+*/
+
+/* HTML and Body Layout */
+
+header, ul, nav, li, a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {  
+	margin: auto auto;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 640px;
+	
+	box-shadow: black 20px 0px 40px,  black -20px 0px 40px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+body header > img {	
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+
+div > a#scroll_to_top {
+	text-decoration: none;
+	float: right;
+	padding: 15px;  
+}
+
+p#end {
+	border-bottom: 3px solid rgb(18, 31, 102);
+}
+
+/* Header Navigation */
+
+header > nav.horizontal {
+	display: table;	
+	width: 100%;
+}
+
+header > nav.horizontal > ul {
+	display: table-row;
+	list-style-type: none;
+}
+
+header > nav.horizontal > ul > li {
+	display: table-cell;
+	text-align: center;
+}
+
+header > nav.horizontal a {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+
+
+/* Images Layout Style */
+
+article#parkinfo img, section#neighborhoods img {
+	float: left;	
+}
+
+ aside#video img, article#parkinfo img, section#neighborhoods img {
+	box-shadow: rgb(51, 51, 51) 8px 8px 15px;
+	display: block;	
+	margin: 5px 20px 10px 15px;
+}
+
+/* Section Layout Styles */
+
+section {	
+	-webkit-flex: 2 1 421px;
+    flex: 2 1 421px; 
+    padding: 10px 20px 20px 40px; 
+}
+
+/* Article Layout Styles */
+
+article h1, article h2, section h1, aside h4 {
+	font-size: 30points;
+    line-height: 26points;
+    margin: 15px;
+}
+
+article p, section p, aside p  {
+	font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 15px;
+}
+
+ul#about {
+	font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 15px;
+}
+
+/* Aside Layout Styles */
+
+aside {
+	background: dodgerblue;
+	color: white;
+	-webkit-flex: 1 2 220px;
+	flex: 1 2 220px ;
+	padding: 25px;    
+}
+
+aside#video {
+	display: block;
+	float: right;
+}	
+
+aside#contact a {
+	color: white;
+	text-decoration: none;
+}
+
+aside#contact a:link, aside#contact a:visited {
+	color: navy;
+	text-decoration: none;
+}
+
+aside#contact a:hover, aside#contact a:active {
+	color: skyblue;
+	text-decoration: none;
+}
+
+/* Form Layout Styles */
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 15px;
+   width: 200px;
+}
+
+input, select, textarea {
+   display: block;
+   float: left;
+   margin: 15px 0px;
+   width: 200px;
+}
+
+textarea {
+   height: 100px;
+}
+
+form p {
+   clear: left;
+   text-align: center;
+   padding-top: 40px;
+}
+
+input[type='submit'] {
+   background-color: rgb(18, 31, 102);
+   color: white;
+   border-radius: 20px;
+   float: none;
+   display: inline;
+   font-size: 1.1em;
+   height: 30px;
+   width: 150px;
+}
+
+/* Table Layout Styles  */
+
+table {	
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+} 
+
+td.image {
+	vertical-align: top;	
+	padding: 25px; 
+}
+
+/* Media Layout Styles */
+
+video {
+	box-shadow: rgb(51, 51, 51) 8px 8px 15px;
+	display: block;
+	margin: 10px auto;
+	width: 90%;
+}
+
+/* Track Layout Styles */
+
+videeo::cue {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: orange;
+	font: 1.2em serif;
+}
+
+video::cue(.Main) {
+	text-shadow: black 3px 3px 0px;
+	font: 2.5em serif:
+}
+
+
+/* Footer Layout Styles */
+
+body > footer {
+   background-color: rgb(91, 91, 91);
+   color: white;
+   font-size: 0.85em;
+   text-align: center;
+   height: 20px;
+   line-height: 20px;
+   width: 100%;
+}

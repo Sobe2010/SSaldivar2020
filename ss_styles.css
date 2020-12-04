@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+   Final Project Website
+   
+   Chicago's Attractions & Virtual Tours   
+   @author Sobeira Saldivar
+   Date:   11/15/2020   
+   
+   Filename: ss_styles.css
+
+   This file contains the typographical styles used  for the 
+   Chicago's Attractions & Virtual Tours website.   
+
+*/
+
+/* Import Design Styles */
+
+@import url('ss_designs.css') screen; 
+
+
+/* HTML and Body Styles */
+
+html {
+    background: rgba(181, 181, 181, 0.25) url(images/back.jpg) fixed;
+	font-family: "Century Gothic", sans-serif;
+    font-size: 12px;	
+}
+
+body {
+   background-color: white;
+   font-family: Verdana, Geneva, Arial, sans-serif; 
+}
+
+/* Header Navigation Styles */
+
+nav.horizontal ul li {
+   background-color: rgb(18, 31, 102);  
+   font-size: 0.9em;
+   padding: 10px 0;
+   text-align: center;     
+}
+
+nav.horizontal a:link, nav.horizontal a:visited {
+   color: white;
+   text-decoration: none;
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   color: rgb(255, 183, 25);
+}
+
+/* Navigation List Style */
+
+nav.ext_links ol {
+	list-style-type: disc;
+}
+
+nav.ext_links a:link, nav.ext_links a:visited {
+	color: navy;
+	text-decoration: none;
+}
+
+nav.ext_links a:hover, nav.ext_links a:active {
+	color: white;
+	text-decoration: none;
+}	
+
+nav.ext_links a {
+	font-size: 1em;
+	letter-spacing: 0em;
+	text-shadow: rgba(0, 0, 0, 1) 1px -1px 1px;
+	transition: color 1.5s ease-in 0.5s,
+				font-size 2s ease,
+				letter-spacing 2s ease-out,
+				text-shadow 2s cubic-bezier(0.6, 0, 0.8, 0.5);
+}
+
+nav.ext_links a:hover {
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	text-shadow: rgba(0, 0, 0, 0.5) 15px -3px 8px;
+}	

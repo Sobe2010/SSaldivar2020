@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+   Final Project Website
+   
+   Chicago's Attractions & Virtual Tours   
+   @author Sobeira Saldivar
+   Date:   11/15/2020   
+   
+   Filename: ss_contact.html
+   -->
+   <meta charset="utf-8" />
+   <title>Chicago's Attractions & Virtual Tours</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="ss_designs.css" rel="stylesheet" />
+   <link href="ss_styles.css" rel="stylesheet" />   
+</head>
+
+<body>
+	
+    <header>
+		<img src="images/Chicago_Home.jpg" alt="Chicago's Attractions & Virtual Tours" />
+        <nav id="top" class="horizontal">
+           <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="ss_about.html">ABOUT US</a></li>
+              <li><a href="ss_architecture.html">ARCHITECTURE</a></li>
+              <li><a href="ss_attractions.html">ATTRACTIONS</a></li>
+              <li><a href="ss_park&beaches.html">PARK & BEACHES</a></li>
+              <li><a href="ss_contact.html">CONTACT US</a></li>
+           </ul>
+        </nav>
+	</header>
+	
+	<article>
+      <h1>Contact Us</h1>
+	  <p>Please fill out the quick form and we will be in touch with you, soon.</p>
+      <form id="contact" action="http://www.chicagovirtualtours.com/contact" method="post">
+		<div class="formRow">
+			<label for="name">Name</label>
+			<input name="custName" id="nameBox" type="text" placeholder="first and last name" required />
+		</div>
+		<div class="formRow">			
+			<label for="email">E-mail</label>
+			<input name="email" id="mailBox" type="email" required />	
+		</div>
+		<div class="formRow">	
+			<label for="address">Message</label>
+			<textarea name="address" id="addBox" type="text" required ></textarea>			
+		</div>
+		<div class="formRow">
+			<p><input type="submit" value="Submit" /></p>
+		</div>	  
+	  </form>
+	 </article>
+	 
+	 <aside id="contact">
+		<h4>Connect with us:</h4>
+		<p>For scheduling or any questions:</p>
+		<p>Email us at <a href="mailto:ssaldivar7@student.ccc.edu?subject = Question&body = Message" target="_blank">contact.tour@chicagovirtualtours.com</a></p>
+		<p>Telephone us at <a href="tel:13121234567">1 (312) 123-4567</a></p><br>
+		<p>Chicago's Attractions & Virtual Tours</p>
+		<p>777 Northside Loop, Suite 105</p>
+		<p>Chicago, Illinois 60601</p>
+		<p>USA</p>
+	</aside>
+	
+	<footer>Chicago's Attractions & Virtual Tours</footer>
+</body>
+</html>
